@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.rbxm binary
+*.rbxl binary
+
+scripts/*.sh linguist-detectable=false
+.githooks/* linguist-detectable=false

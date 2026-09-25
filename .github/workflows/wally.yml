@@ -1,0 +1,20 @@
+name: publish to wally
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup rokit
+        uses: CompeyDev/setup-rokit@v0.1.2
+
+      - name: Login
+        run: wally login --token "${{ secrets.WALLY_TOKEN }}"
+
+      - name: Publish
+        run: wally publish

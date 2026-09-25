@@ -1,0 +1,10 @@
+[package]
+name = "skatingii/swiftpacket"
+description = "A fast, fully typed, buffer-batched networking library for Roblox"
+version = "0.1.2"
+license = "MIT"
+authors = ["skaterstudios (skaterstudios.com)"]
+repository = "https://github.com/skatingii/SwiftPacket"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+exclude = [".github", ".githooks", "docs", "examples", "scripts", "test", ".gitattributes", ".gitignore", ".luaurc", "CHANGELOG.md", "README.md", "dev.project.json", "globalTypes.d.luau", "rokit.toml", "stylua.toml"]
