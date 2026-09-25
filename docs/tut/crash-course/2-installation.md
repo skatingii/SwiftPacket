@@ -23,14 +23,29 @@ const SwiftPacket = require("@game/ReplicatedStorage/Packages/SwiftPacket")
 Install it from npm:
 
 ```sh
-npm install @rbxts/swiftpacket
+npm install @skating/swiftpacket
 ```
 
 The package ships the same Luau source as the Wally package, with TypeScript
-declarations beside it. Import it like any other roblox-ts package:
+declarations beside it.
+
+Add the `@skating` scope to your project so roblox-ts can find it. In
+`tsconfig.json`:
+
+```json
+"typeRoots": ["node_modules/@rbxts", "node_modules/@skating"]
+```
+
+And in `default.project.json`, next to `@rbxts` under `node_modules`:
+
+```json
+"@skating": { "$path": "node_modules/@skating" }
+```
+
+Then import it:
 
 ```ts
-import SwiftPacket from "@rbxts/swiftpacket";
+import SwiftPacket from "@skating/swiftpacket";
 
 const Damage = SwiftPacket("Damage", SwiftPacket.U16, SwiftPacket.InstanceOf("Humanoid"));
 ```

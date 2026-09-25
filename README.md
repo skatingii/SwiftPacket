@@ -33,11 +33,26 @@ SwiftPacket = "skatingii/swiftpacket@0.1.4"
 With [roblox-ts](https://roblox-ts.com), install it from npm:
 
 ```sh
-npm install @rbxts/swiftpacket
+npm install @skating/swiftpacket
 ```
 
+Add the `@skating` scope to your project so roblox-ts can find it. In
+`tsconfig.json`:
+
+```json
+"typeRoots": ["node_modules/@rbxts", "node_modules/@skating"]
+```
+
+And in `default.project.json`, next to `@rbxts` under `node_modules`:
+
+```json
+"@skating": { "$path": "node_modules/@skating" }
+```
+
+Then import it:
+
 ```ts
-import SwiftPacket from "@rbxts/swiftpacket";
+import SwiftPacket from "@skating/swiftpacket";
 
 const Chat = SwiftPacket("Chat", SwiftPacket.String);
 const GetCoins = SwiftPacket("GetCoins").Response(SwiftPacket.U32);

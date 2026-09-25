@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-- SwiftPacket is published to npm as `@rbxts/swiftpacket`, with TypeScript
+- SwiftPacket is published to npm as `@skating/swiftpacket`, with TypeScript
   declarations for roblox-ts. The package ships the same Luau source as the
   Wally package.
 

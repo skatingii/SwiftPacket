@@ -37,7 +37,7 @@ jobs:
       - name: Install the packed package
         run: |
           npm pack ../.. --pack-destination .
-          npm install --no-save ./rbxts-swiftpacket-*.tgz
+          npm install --no-save ./skating-swiftpacket-*.tgz
 
       - name: Check the typings
         run: npm run check

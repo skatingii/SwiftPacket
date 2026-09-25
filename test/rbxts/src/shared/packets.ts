@@ -1,4 +1,4 @@
-import SwiftPacket from "@rbxts/swiftpacket";
+import SwiftPacket from "@skating/swiftpacket";
 
 const Item = SwiftPacket.Static(["Sword", "Shield", "Potion", "Bow"]);
 

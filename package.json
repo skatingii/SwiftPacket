@@ -1,5 +1,5 @@
 {
-	"name": "@rbxts/swiftpacket",
+	"name": "@skating/swiftpacket",
 	"version": "0.1.4",
 	"description": "A fast, fully typed, buffer-batched networking library for Roblox",
 	"main": "src/init.luau",
