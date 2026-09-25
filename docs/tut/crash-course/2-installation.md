@@ -18,6 +18,35 @@ Sync the `Packages` folder into `ReplicatedStorage` with Rojo, and require it:
 const SwiftPacket = require("@game/ReplicatedStorage/Packages/SwiftPacket")
 ```
 
+## roblox-ts
+
+Install it from npm:
+
+```sh
+npm install @rbxts/swiftpacket
+```
+
+The package ships the same Luau source as the Wally package, with TypeScript
+declarations beside it. Import it like any other roblox-ts package:
+
+```ts
+import SwiftPacket from "@rbxts/swiftpacket";
+
+const Damage = SwiftPacket("Damage", SwiftPacket.U16, SwiftPacket.InstanceOf("Humanoid"));
+```
+
+A few things read differently from Luau:
+
+- Packet methods are called with a dot, such as `Damage.Fire(25, humanoid)`, and
+  roblox-ts turns them into method calls.
+- A handler that answers with more than one value returns them with
+  `$tuple(true, 10)`, and a request with more than one response type returns a
+  tuple you destructure with `const [landed, damage] = Hit.Fire(humanoid)`.
+- `SwiftPacket.Static(["Sword", "Shield"])` is typed as `"Sword" | "Shield"`, and
+  `SwiftPacket.InstanceOf("Humanoid")` as `Humanoid | undefined`.
+- In a struct built with `SwiftPacket.Struct()`, a field wrapped in `Optional()`
+  may be left out of the object you send.
+
 ## Model file
 
 Every release has a `SwiftPacket.rbxm` attached. Download it from the

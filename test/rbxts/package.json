@@ -1,0 +1,15 @@
+{
+	"name": "swiftpacket-typings-check",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"check": "rbxtsc && tsc -p tsconfig.misuse.json"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "3.0.0-types.0",
+		"@rbxts/services": "1.6.0",
+		"@rbxts/types": "1.0.955",
+		"roblox-ts": "3.0.0",
+		"typescript": "5.5.3"
+	}
+}

@@ -4,3 +4,5 @@
 
 scripts/*.sh linguist-detectable=false
 .githooks/* linguist-detectable=false
+src/index.d.ts linguist-detectable=false
+test/rbxts/** linguist-detectable=false

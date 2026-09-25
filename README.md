@@ -30,6 +30,19 @@ With [Wally](https://wally.run), add SwiftPacket to your `wally.toml`:
 SwiftPacket = "skatingii/swiftpacket@0.1.3"
 ```
 
+With [roblox-ts](https://roblox-ts.com), install it from npm:
+
+```sh
+npm install @rbxts/swiftpacket
+```
+
+```ts
+import SwiftPacket from "@rbxts/swiftpacket";
+
+const Chat = SwiftPacket("Chat", SwiftPacket.String);
+const GetCoins = SwiftPacket("GetCoins").Response(SwiftPacket.U32);
+```
+
 Or download `SwiftPacket.rbxm` from the
 [latest release](https://github.com/skatingii/SwiftPacket/releases/latest) and put
 it in `ReplicatedStorage`.

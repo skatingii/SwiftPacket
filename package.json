@@ -1,0 +1,31 @@
+{
+	"name": "@rbxts/swiftpacket",
+	"version": "0.1.3",
+	"description": "A fast, fully typed, buffer-batched networking library for Roblox",
+	"main": "src/init.luau",
+	"types": "src/index.d.ts",
+	"files": [
+		"src"
+	],
+	"keywords": [
+		"roblox",
+		"roblox-ts",
+		"luau",
+		"networking",
+		"remote",
+		"buffer"
+	],
+	"author": "skaterstudios",
+	"license": "MIT",
+	"homepage": "https://github.com/skatingii/SwiftPacket#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/skatingii/SwiftPacket.git"
+	},
+	"bugs": {
+		"url": "https://github.com/skatingii/SwiftPacket/issues"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

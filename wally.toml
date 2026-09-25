@@ -7,4 +7,4 @@ authors = ["skaterstudios (skaterstudios.com)"]
 repository = "https://github.com/skatingii/SwiftPacket"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
-exclude = [".github", ".githooks", "docs", "examples", "scripts", "test", ".gitattributes", ".gitignore", ".luaurc", "CHANGELOG.md", "README.md", "dev.project.json", "globalTypes.d.luau", "rokit.toml", "stylua.toml"]
+exclude = [".github", ".githooks", "docs", "examples", "scripts", "test", ".gitattributes", ".gitignore", ".luaurc", "CHANGELOG.md", "README.md", "dev.project.json", "globalTypes.d.luau", "rokit.toml", "stylua.toml", "package.json", "src/index.d.ts", "CODE_OF_CONDUCT.md", "SECURITY.md"]

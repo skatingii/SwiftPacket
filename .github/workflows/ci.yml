@@ -16,3 +16,28 @@ jobs:
 
       - name: Run checks
         run: bash scripts/check.sh
+
+  typings:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: test/rbxts
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install the packed package
+        run: |
+          npm pack ../.. --pack-destination .
+          npm install --no-save ./rbxts-swiftpacket-*.tgz
+
+      - name: Check the typings
+        run: npm run check
