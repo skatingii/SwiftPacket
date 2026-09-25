@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/skatingii/SwiftPacket/actions/workflows/ci.yml/badge.svg)](https://github.com/skatingii/SwiftPacket/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/skatingii/SwiftPacket)](LICENSE)
+[![Wally](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.wally.run%2Fv1%2Fpackage-metadata%2Fskatingii%2Fswiftpacket&query=%24.versions%5B0%5D.package.version&label=wally)](https://wally.run/package/skatingii/swiftpacket)
+[![npm](https://img.shields.io/npm/v/%40skating%2Fswiftpacket)](https://www.npmjs.com/package/@skating/swiftpacket)
 
 A fast, fully typed, buffer-batched networking library for Roblox.
 
@@ -23,14 +25,16 @@ sees it.
 
 ## Installation
 
-With [Wally](https://wally.run), add SwiftPacket to your `wally.toml`:
+With [Wally](https://wally.run/package/skatingii/swiftpacket), add SwiftPacket to
+your `wally.toml`:
 
 ```toml
 [dependencies]
 SwiftPacket = "skatingii/swiftpacket@0.1.4"
 ```
 
-With [roblox-ts](https://roblox-ts.com), install it from npm:
+With [roblox-ts](https://roblox-ts.com), install it from
+[npm](https://www.npmjs.com/package/@skating/swiftpacket):
 
 ```sh
 npm install @skating/swiftpacket
