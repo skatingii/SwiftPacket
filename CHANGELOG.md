@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 --------------------------------------------------------------------------------
 
+## [0.1.4] - 2026-09-25
+
+### Added
+
+- SwiftPacket is published to npm as `@rbxts/swiftpacket`, with TypeScript
+  declarations for roblox-ts. The package ships the same Luau source as the
+  Wally package.
+
+### Changed
+
+- The Wally package no longer includes the code of conduct or the security
+  policy.
+
+--------------------------------------------------------------------------------
+
 ## [0.1.3] - 2026-09-25
 
 ### Changed

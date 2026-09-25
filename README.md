@@ -27,7 +27,7 @@ With [Wally](https://wally.run), add SwiftPacket to your `wally.toml`:
 
 ```toml
 [dependencies]
-SwiftPacket = "skatingii/swiftpacket@0.1.3"
+SwiftPacket = "skatingii/swiftpacket@0.1.4"
 ```
 
 With [roblox-ts](https://roblox-ts.com), install it from npm:

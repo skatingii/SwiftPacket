@@ -9,7 +9,7 @@ Add it to the `[dependencies]` of your `wally.toml`, then run `wally install`:
 
 ```toml
 [dependencies]
-SwiftPacket = "skatingii/swiftpacket@0.1.3"
+SwiftPacket = "skatingii/swiftpacket@0.1.4"
 ```
 
 Sync the `Packages` folder into `ReplicatedStorage` with Rojo, and require it:
