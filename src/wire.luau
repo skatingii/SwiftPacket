@@ -4,6 +4,7 @@
 --[[
 	Author: @skaterstudios
 	Website: skaterstudios.com
+	GitHub: github.com/skatingii/SwiftPacket
 	Discord Server: discord.gg/skaterstudios
 
 	Licensed under the MIT License. You may use, modify, redistribute and sell
