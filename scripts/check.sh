@@ -15,7 +15,7 @@ echo "Checking formatting"
 stylua --check init.luau src test examples
 
 echo "Type checking"
-Output="$(Analyze init.luau src/*.luau test/types/Valid.luau test/Tests.luau test/Testkit.luau examples/*.luau)"
+Output="$(Analyze init.luau src/*.luau test/types/Valid.luau test/Tests.luau test/Testkit.luau $(find examples -name "*.luau"))"
 Errors="$(printf '%s\n' "$Output" | grep -c "Error" || true)"
 Baseline="$(tr -d '[:space:]' < scripts/strict-baseline.txt)"
 
