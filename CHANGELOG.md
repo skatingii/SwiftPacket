@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 --------------------------------------------------------------------------------
 
+## [0.1.3] - 2026-09-25
+
+### Changed
+
+- Every file header now links to the GitHub repository.
+- The examples were rewritten as four small features, chat, combat, shared
+  cursors and an inventory, each split into packets, pure rules, a server
+  script and a client script.
+
+--------------------------------------------------------------------------------
+
 ## [0.1.2] - 2026-09-25
 
 ### Changed

@@ -27,7 +27,7 @@ With [Wally](https://wally.run), add SwiftPacket to your `wally.toml`:
 
 ```toml
 [dependencies]
-SwiftPacket = "skatingii/swiftpacket@0.1.2"
+SwiftPacket = "skatingii/swiftpacket@0.1.3"
 ```
 
 Or download `SwiftPacket.rbxm` from the

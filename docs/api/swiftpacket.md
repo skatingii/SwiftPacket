@@ -59,4 +59,4 @@ Changes library wide settings.
 
 ## Version
 
-The version of the library, as a string such as `"0.1.2"`.
+The version of the library, as a string such as `"0.1.3"`.
